@@ -1,0 +1,16 @@
+tasks:
+  Number To Sequence:
+    robotTaskName: Number To Sequence
+  Sequence To Total:
+    robotTaskName: Sequence To Total
+  Process Total:
+    robotTaskName: Process Total
+
+condaConfigFile: conda.yaml
+artifactsDir: output
+PATH:
+  - .
+PYTHONPATH:
+  - .
+ignoreFiles:
+  - .gitignore
