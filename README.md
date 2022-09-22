@@ -5,14 +5,15 @@ heads, bodies and legs that we have to order.
 
 ![Process diagram](devdata/example-orders-distribution.jpg)
 
+
 ### Tasks
 
 1. `Read And Split Orders`: Splits a list of orders from **robotsparebin-orders** input
    Work Item into individual output ones.
 2. `Compute Number Of Parts`: Computes a total for every requested part type: heads,
    bodies and legs. Then creates an output Work Item with the total.
-3. `Order The Parts In Bulk`: Logs the total number of parts we have to order for each
-   type.
+3. `Order The Parts In Bulk`: Generates an invoice with the total number of body parts
+   we have to order.
 
 
 ### Notes
@@ -24,3 +25,5 @@ heads, bodies and legs that we have to order.
   - Task #1: robotsparebin-orders
   - Task #2: run-2
   - Task #3: run-3
+- Technical details of the pattern can be deepened in this abstract example:
+  [example-workitems-splitcombine](https://github.com/robocorp/example-workitems-splitcombine)

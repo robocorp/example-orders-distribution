@@ -3,6 +3,8 @@ Documentation       Count how many robot parts are needed for each type given al
 ...    orders.
 
 Library    Collections
+Library    RPA.Desktop
+Library    RPA.PDF
 Library    RPA.Robocorp.WorkItems
 Library    RPA.Tables
 
@@ -86,7 +88,14 @@ Order The Parts In Bulk
     ...    type.
 
     @{part_types} =    Create List    heads    bodies    legs
+    &{parts} =    Create Dictionary
     FOR    ${part_type}    IN    @{part_types}
         ${total_number} =    Get Work Item Variable    ${part_type}
-        Log    Let's order ${total_number} ${part_type}
+        Log To Console    Let's order ${total_number} ${part_type}
+        Set To Dictionary    ${parts}    ${part_type}    ${total_number}
     END
+
+    ${invoice_pdf} =    Set Variable    ${OUTPUT_DIR}${/}invoice.pdf
+    Template Html To Pdf    devdata${/}invoice-template.html    ${invoice_pdf}
+    ...    variables=${parts}
+    Open File    ${invoice_pdf}
