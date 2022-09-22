@@ -98,4 +98,4 @@ Order The Parts In Bulk
     ${invoice_pdf} =    Set Variable    ${OUTPUT_DIR}${/}invoice.pdf
     Template Html To Pdf    devdata${/}invoice-template.html    ${invoice_pdf}
     ...    variables=${parts}
-    Open File    ${invoice_pdf}
+    Run Keyword And Ignore Error    Open File    ${invoice_pdf}
