@@ -12,6 +12,7 @@ temp/
 *.pyc
 *.zip
 */work-items-out/*
+work-items.output.json
 testrun/*
 .~lock*
 *.pkl

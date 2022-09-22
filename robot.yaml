@@ -1,10 +1,10 @@
 tasks:
-  Number To Sequence:
-    robotTaskName: Number To Sequence
-  Sequence To Total:
-    robotTaskName: Sequence To Total
-  Process Total:
-    robotTaskName: Process Total
+  Read And Split Orders:
+    robotTaskName: Read And Split Orders
+  Compute Number Of Parts:
+    robotTaskName: Compute Number Of Parts
+  Order The Parts In Bulk:
+    robotTaskName: Order The Parts In Bulk
 
 condaConfigFile: conda.yaml
 artifactsDir: output
