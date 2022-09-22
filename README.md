@@ -6,7 +6,7 @@ heads, bodies and legs that we have to order.
 ![Process diagram](devdata/example-orders-distribution.jpg)
 
 
-### Tasks
+## Tasks
 
 1. `Read And Split Orders`: Splits a list of orders from **robotsparebin-orders** input
    Work Item into individual output ones.

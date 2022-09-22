@@ -84,7 +84,7 @@ Compute Number Of Parts
 
 
 Order The Parts In Bulk
-    [Documentation]    Receives the number of parts to be order in total for every
+    [Documentation]    Receives the number of parts to be ordered in total for every
     ...    type.
 
     @{part_types} =    Create List    heads    bodies    legs
