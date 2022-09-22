@@ -3,6 +3,8 @@
 This is a 3-Step Process which takes a list of orders and computes the total number of
 heads, bodies and legs that we have to order.
 
+![Process diagram](devdata/example-orders-distribution.jpg)
+
 ### Tasks
 
 1. `Read And Split Orders`: Splits a list of orders from **robotsparebin-orders** input
