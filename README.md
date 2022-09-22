@@ -3,6 +3,13 @@
 This is a 3-Step Process which takes a list of orders and computes the total number of
 heads, bodies and legs that we have to order.
 
+This is a funny practical approach of the
+[SplitCombine](https://github.com/robocorp/example-workitems-splitcombine) pattern:
+- Problem: Having to process multiple input Work Items before being able to create just
+  one output Work Item with the final result at the end of the iteration.
+- Solution: Creating an empty output Work Item attached to the initial input one, then
+  saving later on the final result data into it.
+
 ![Process diagram](https://github.com/robocorp/example-orders-distribution/blob/master/devdata/example-orders-distribution.jpg)
 
 
@@ -25,5 +32,3 @@ heads, bodies and legs that we have to order.
   - Task #1: robotsparebin-orders
   - Task #2: run-2
   - Task #3: run-3
-- Technical details of the pattern can be deepened in this abstract example:
-  [example-workitems-splitcombine](https://github.com/robocorp/example-workitems-splitcombine)
