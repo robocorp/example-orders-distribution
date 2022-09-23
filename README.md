@@ -10,7 +10,7 @@ This is a funny practical approach of the
 - Solution: Creating an empty output Work Item attached to the initial input one, then
   saving later on the final result data into it.
 
-![Process diagram](https://github.com/robocorp/example-orders-distribution/blob/master/devdata/example-orders-distribution.jpg)
+![Process diagram](https://raw.githubusercontent.com/robocorp/example-orders-distribution/master/devdata/example-orders-distribution.jpg)
 
 
 ## Tasks
