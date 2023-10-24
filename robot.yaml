@@ -3,6 +3,8 @@ tasks:
     robotTaskName: Read And Split Orders
   Compute Number Of Parts:
     robotTaskName: Compute Number Of Parts
+  Compute Number Of Parts With Trace:
+    shell: python -m robot -d output -L TRACE --logtitle "Task log" --task "Compute Number Of Parts" tasks.robot
   Order The Parts In Bulk:
     robotTaskName: Order The Parts In Bulk
 

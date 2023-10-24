@@ -74,7 +74,10 @@ Compute Number Of Parts
     ...    heads    ${0}
     ...    bodies    ${0}
     ...    legs    ${0}
+    Get Input Work Item      auto_release=${False}  # intentionally retrieve another item without releasing first
     For Each Input Work Item    Add Parts To Total    ${parts}
+    Set Current Work Item    ${item_in}
+    Release Input Work Item    DONE  # now release the initially non-released item
 
     # We get back to our already created and saved empty output Work Item and this time
     #  we set for the first time the result computed above.
