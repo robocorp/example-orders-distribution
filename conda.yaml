@@ -14,4 +14,4 @@ dependencies:
       # Define pip packages here.
       # https://pypi.org/
       # - rpaframework==27.4.2 # https://rpaframework.org/releasenotes.html
-      - https://robocorp:freeasinbeer@devpi.robocorp.cloud/ci/test/+f/3cf/64591c4c62feb/rpaframework-27.4.2-py3-none-any.whl#sha256=3cf64591c4c62febc9b17116b7471462ba7e40d038d0243e1d3c1b7eda05d11d
+      - https://robocorp:freeasinbeer@devpi.robocorp.cloud/ci/test/+f/354/ee71d612e1879/rpaframework-27.4.2-py3-none-any.whl#sha256=354ee71d612e1879754174cbd3f57dd8a3bfd5fe9ad83e13595b7288c1cf3c6d
